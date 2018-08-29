@@ -9,7 +9,7 @@ namespace DeloitteValidation
     public enum MyEnum
     {
         None,
-        OptionA,
+        Email,
         OptionB,
         OptionC
     }
