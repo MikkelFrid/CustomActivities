@@ -1,0 +1,15 @@
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\obj\Debug\DeloitteValidation.Design.csprojAssemblyReference.cache
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\obj\Debug\DeloitteValidationDesigner.baml
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\obj\Debug\DeloitteValidationDesigner.g.cs
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\obj\Debug\DeloitteValidation.Design_MarkupCompile.cache
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\obj\Debug\DeloitteValidation.Design.g.resources
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\obj\Debug\DeloitteValidation.Design.Properties.Resources.resources
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\obj\Debug\DeloitteValidation.Design.csproj.GenerateResource.cache
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\obj\Debug\DeloitteValidation.Design.csproj.CoreCompileInputs.cache
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\bin\Debug\DeloitteValidation.Design.dll
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\bin\Debug\DeloitteValidation.Design.pdb
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\bin\Debug\DeloitteValidation.dll
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\bin\Debug\DeloitteValidation.pdb
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\obj\Debug\DeloitteValidation.Design.csproj.CopyComplete
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\obj\Debug\DeloitteValidation.Design.dll
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteValidation.Design\obj\Debug\DeloitteValidation.Design.pdb
