@@ -24,7 +24,6 @@ namespace DeloitteValidation
         /// Gets or sets Option. 
         /// </summary> 
         public MyEnum Option { get; set; }
-        public bool TestCode { get; set; }
 
         [DefaultValue(null)]
         public InArgument<string> Text { get; set; }
@@ -35,10 +34,7 @@ namespace DeloitteValidation
             this.Result.Set(
                 context,
                 string.Format(
-                    "Text is {0}, TestCode is {1}, Option is {2}",
-                    context.GetValue(this.Text),
-                    this.TestCode,
-                    this.Option));
+                    "Text is {0}",this.Option));
         }
     }
 }
