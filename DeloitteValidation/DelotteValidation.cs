@@ -16,32 +16,32 @@ using System.Text.RegularExpressions;
 
 namespace DeloitteValidation
 {
-    // Define class and name the acitivty
+    // Start class and name the acitivty RegexCollection
     [ToolboxBitmap(typeof(RegexCollection), "Regex.png")]
     public sealed class RegexCollection : CodeActivity
     {
-        /// <summary> 
-        /// Gets or sets Option. 
-        /// </summary> 
-        public MyEnum Option { get; set; }
-
+        public RegexEnum Option { get; set; }
         public Regex reg;
 
+        //Input: Set the input string
         [Category("Input")]
+        [Description("Set the input string to validate")]
         [RequiredArgument]
         public InArgument<string> Text { get; set; }
 
+        //Input: Set the output boolean
         [Category("Output")]
+        [Description("Set the output boolean")]
         public OutArgument<bool> Result { get; set; }
 
+        //Input: Set the string of the validated input string for debug
         [Category("Output")]
+        [Description("Set the string of the validated input string for debug")]
         public OutArgument<string> ResultText { get; set; }
 
         protected override void Execute(CodeActivityContext context)
         {
-
-            
-           
+            // Based on input from selecter, apply the accordingly Regex format
             switch (string.Format("{0}",this.Option))
             {
                 case "Email":
@@ -119,6 +119,7 @@ namespace DeloitteValidation
                     break;
             }
 
+            // Perform Regex validation and return true or false bool
             if (!reg.IsMatch(string.Format("{0}", context.GetValue(this.Text))))
             {
                 Result.Set(context, false);
@@ -128,8 +129,9 @@ namespace DeloitteValidation
                 Result.Set(context, true);
             }
 
+            // Return result string (Initial string that has been validated)
             ResultText.Set(context, string.Format("{0}", context.GetValue(this.Text)));
-
         }
     }
+    // End class and name the acitivty RegexCollection
 }

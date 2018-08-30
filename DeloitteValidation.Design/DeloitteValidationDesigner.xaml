@@ -13,9 +13,9 @@
             <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
             <sapc:ModelToObjectValueConverter x:Key="ModelToObjectValueConverter" />
 
-            <ObjectDataProvider x:Key="MyEnumValues" MethodName="GetValues" ObjectType="{x:Type s:Enum}">
+            <ObjectDataProvider x:Key="RegexEnumValues" MethodName="GetValues" ObjectType="{x:Type s:Enum}">
                 <ObjectDataProvider.MethodParameters>
-                    <x:Type TypeName="DeloitteValidation:MyEnum"/>
+                    <x:Type TypeName="DeloitteValidation:RegexEnum"/>
                 </ObjectDataProvider.MethodParameters>
             </ObjectDataProvider>
 
@@ -39,11 +39,11 @@
                         <RowDefinition />
                     </Grid.RowDefinitions>
 
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Margin="5" Text="String validate" />
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Margin="5" Text="Input string" />
                     <sapv:ExpressionTextBox HintText="Enter the string to validate" Expression="{Binding Path=ModelItem.Text, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="0" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" Width="300" Margin="0,5" MaxLines="1" />
 
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="0" Margin="5" Text="Regex Template" />
-                    <ComboBox ItemsSource="{Binding Source={StaticResource MyEnumValues}}" SelectedValue="{Binding Path=ModelItem.Option, Mode=TwoWay, Converter={StaticResource ModelToObjectValueConverter}}" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="0,5"></ComboBox>
+                    <ComboBox ItemsSource="{Binding Source={StaticResource RegexEnumValues}}" SelectedValue="{Binding Path=ModelItem.Option, Mode=TwoWay, Converter={StaticResource ModelToObjectValueConverter}}" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="0,5" IsDropDownOpen="False"/>
 
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="0" Margin="5" Text="Reuslt Bool" />
                     <sapv:ExpressionTextBox HintText="Enter the bool value" Expression="{Binding Path=ModelItem.Result, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:Boolean" Grid.Row="2" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" Width="300" Margin="0,5" MaxLines="1" />

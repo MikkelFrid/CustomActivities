@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DeloitteValidation
 {
-    public enum MyEnum
+    public enum RegexEnum
     {
         [Display(Name = "Email Address")]
         Email,

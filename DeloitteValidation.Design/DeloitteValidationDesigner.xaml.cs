@@ -27,7 +27,8 @@ namespace DeloitteValidation.Design
        }
     
        public static void RegisterMetadata(AttributeTableBuilder builder)
-       {   
+       {
+           builder.AddCustomAttributes(typeof(RegexCollection), new CategoryAttribute("Validation"));
            builder.AddCustomAttributes(typeof(RegexCollection), new DesignerAttribute(typeof(DeloitteValidationDesigner)));
            builder.AddCustomAttributes(typeof(RegexCollection), new DescriptionAttribute("My sample activity"));
        }
