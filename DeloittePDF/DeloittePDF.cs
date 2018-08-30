@@ -20,10 +20,10 @@ using System.IO;
 namespace DeloittePDF
 {
     // Start class and name the acitivty RegexCollection
-    //[ToolboxBitmap(typeof(MergePDF), "Regex.png")]
+    [ToolboxBitmap(typeof(MergePDF), "MergePDF.png")]
     public sealed class MergePDF : CodeActivity
     {
-        //public RegexEnum Option { get; set; }
+        public Open Option { get; set; }
 
         //Input: Set the input string
         [Category("Input")]
@@ -45,7 +45,7 @@ namespace DeloittePDF
         {
             // Get some file names
             var files = Directory.EnumerateFiles(FileDirectory.Get(context), "*.*", SearchOption.AllDirectories)
-            .Where(s => s.EndsWith(".PDF") || s.EndsWith(".pdf"));
+            .Where(s => s.ToLower().EndsWith(".pdf"));
 
             // Open the output document
             PdfDocument outputDocument = new PdfDocument();
@@ -71,10 +71,15 @@ namespace DeloittePDF
             string filename = string.Format("{0}", FileDirectory.Get(context)) + "\\" + string.Format("{0}",OutputName.Get(context));
             outputDocument.Save(filename);
 
+            // Set full output path 
             OutputFullPath.Set(context, filename);
 
-            // ...and start a viewer.
-            Process.Start(filename);
+            // Based on input from the selecter, open or do not open when merged
+            if (string.Format("{0}", this.Option) == "Yes")
+            {
+                // ...and start a viewer.
+                Process.Start(filename);
+            }
         }
     }
     // End class and name the acitivty RegexCollection
