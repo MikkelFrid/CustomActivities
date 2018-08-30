@@ -1,0 +1,11 @@
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloittePDF\bin\Release\DeloittePDF.dll
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloittePDF\bin\Release\DeloittePDF.pdb
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloittePDF\bin\Release\PdfSharp.dll
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloittePDF\bin\Release\PdfSharp.pdb
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloittePDF\bin\Release\PdfSharp.xml
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloittePDF\bin\Release\de\PdfSharp.resources.dll
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloittePDF\obj\Release\DeloittePDF.csprojAssemblyReference.cache
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloittePDF\obj\Release\DeloittePDF.csproj.CoreCompileInputs.cache
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloittePDF\obj\Release\DeloittePDF.csproj.CopyComplete
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloittePDF\obj\Release\DeloittePDF.dll
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloittePDF\obj\Release\DeloittePDF.pdb
