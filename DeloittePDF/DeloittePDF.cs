@@ -85,7 +85,7 @@ namespace DeloittePDF
     // End class and name the acitivty MergePDF
 
     // Start class and name the acitivty SplitPDF
-    [ToolboxBitmap(typeof(SplitPDF), "MergePDF.png")]
+    [ToolboxBitmap(typeof(SplitPDF), "SplitPDF.png")]
     public sealed class SplitPDF : CodeActivity
     {
         //Input: Set the input string

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DeloittePDF.Design.Properties
+namespace DeloittePDF.DesignMergePDF.Properties
 {
 
 

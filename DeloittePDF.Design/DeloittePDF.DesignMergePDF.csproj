@@ -50,13 +50,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="DeloittePDFDesigner.xaml">
+    <Page Include="DeloittePDFDesignMergePDF.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="DeloittePDFDesignerMeta.cs" />
-    <Compile Include="DeloittePDFDesigner.xaml.cs">
-      <DependentUpon>DeloittePDFDesigner.xaml</DependentUpon>
+    <Compile Include="DeloittePDFDesignMergePDF.xaml.cs">
+      <DependentUpon>DeloittePDFDesignMergePDF.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

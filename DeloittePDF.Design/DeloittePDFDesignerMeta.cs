@@ -8,9 +8,9 @@ using System.Activities.Core.Presentation;
 // Added
 using System.Activities.Presentation.Metadata;
 
-namespace DeloittePDF.Design
+namespace DeloittePDF.DesignMergePDF
 {
-    public sealed class DeloittePDFDesignerMeta : IRegisterMetadata
+    public sealed class DeloittePDFDesignMergePDFMeta : IRegisterMetadata
     {
         public void Register()
         {
@@ -19,7 +19,7 @@ namespace DeloittePDF.Design
         public static void RegisterAll()
         {
             var builder = new AttributeTableBuilder();
-            DeloittePDFDesigner.RegisterMetadata(builder);
+            DeloittePDFDesignMergePDF.RegisterMetadata(builder);
             // TODO: Other activities can be added here
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

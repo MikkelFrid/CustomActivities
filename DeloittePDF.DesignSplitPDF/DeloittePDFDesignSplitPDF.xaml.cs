@@ -16,25 +16,20 @@ using System.Configuration;
 using System.Activities.Presentation.Metadata;
 using System.ComponentModel;
 
-namespace DeloittePDF.Design
+namespace DeloittePDF.DesignSplitPDF
 {
     // Interaction logic for DeloittePDF.xaml
-    public partial class DeloittePDFDesigner
+    public partial class DeloittePDFDesignSplitPDF
     {
-        public DeloittePDFDesigner()
+        public DeloittePDFDesignSplitPDF()
         {
             this.InitializeComponent();
         }
 
         public static void RegisterMetadata(AttributeTableBuilder builder)
         {
-
-            builder.AddCustomAttributes(typeof(MergePDF), new CategoryAttribute("Deloitte PDF"));
-            builder.AddCustomAttributes(typeof(MergePDF), new DesignerAttribute(typeof(DeloittePDFDesigner)));
-            builder.AddCustomAttributes(typeof(MergePDF), new DescriptionAttribute("Merges a directory of PDF files"));
-
             builder.AddCustomAttributes(typeof(SplitPDF), new CategoryAttribute("Deloitte PDF"));
-            /*builder.AddCustomAttributes(typeof(SplitPDF), new DesignerAttribute(typeof(DeloittePDFDesigner)));*/
+            builder.AddCustomAttributes(typeof(SplitPDF), new DesignerAttribute(typeof(DeloittePDFDesignSplitPDF)));
             builder.AddCustomAttributes(typeof(SplitPDF), new DescriptionAttribute("Splits a PDF file into multiple files"));
         }
     }

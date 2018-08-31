@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeloitteValidation.Design",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeloittePDF", "DeloittePDF\DeloittePDF.csproj", "{D73858FD-896F-448F-BC5F-7ACA3ADB3E79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeloittePDF.Design", "DeloittePDF.Design\DeloittePDF.Design.csproj", "{70EFD432-A6EF-4D1E-B286-AA6268BFF4CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeloittePDF.DesignMergePDF", "DeloittePDF.Design\DeloittePDF.DesignMergePDF.csproj", "{70EFD432-A6EF-4D1E-B286-AA6268BFF4CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeloittePDF.DesignSplitPDF", "DeloittePDF.DesignSplitPDF\DeloittePDF.DesignSplitPDF.csproj", "{703F5775-EE58-4884-8851-49D8558ADFF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,14 @@ Global
 		{70EFD432-A6EF-4D1E-B286-AA6268BFF4CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{70EFD432-A6EF-4D1E-B286-AA6268BFF4CE}.Release|x86.ActiveCfg = Release|Any CPU
 		{70EFD432-A6EF-4D1E-B286-AA6268BFF4CE}.Release|x86.Build.0 = Release|Any CPU
+		{703F5775-EE58-4884-8851-49D8558ADFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{703F5775-EE58-4884-8851-49D8558ADFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{703F5775-EE58-4884-8851-49D8558ADFF2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{703F5775-EE58-4884-8851-49D8558ADFF2}.Debug|x86.Build.0 = Debug|Any CPU
+		{703F5775-EE58-4884-8851-49D8558ADFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{703F5775-EE58-4884-8851-49D8558ADFF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{703F5775-EE58-4884-8851-49D8558ADFF2}.Release|x86.ActiveCfg = Release|Any CPU
+		{703F5775-EE58-4884-8851-49D8558ADFF2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
