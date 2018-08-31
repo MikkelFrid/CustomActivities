@@ -46,7 +46,7 @@
                     <ComboBox ItemsSource="{Binding Source={StaticResource RegexEnumValues}}" SelectedValue="{Binding Path=ModelItem.Option, Mode=TwoWay, Converter={StaticResource ModelToObjectValueConverter}}" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="0,5" IsDropDownOpen="False"/>
 
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="0" Margin="5" Text="Reuslt Bool" />
-                    <sapv:ExpressionTextBox HintText="Enter the bool value" Expression="{Binding Path=ModelItem.Result, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:Boolean" Grid.Row="2" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" Width="300" Margin="0,5" MaxLines="1" />
+                    <sapv:ExpressionTextBox HintText="Enter the bool value" Expression="{Binding Path=ModelItem.Result, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=Out }" ExpressionType="s:Boolean" Grid.Row="2" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" Width="300" Margin="0,5" MaxLines="1" />
 
                 </Grid>
             </DataTemplate>

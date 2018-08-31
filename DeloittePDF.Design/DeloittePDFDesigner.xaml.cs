@@ -18,7 +18,7 @@ using System.ComponentModel;
 
 namespace DeloittePDF.Design
 {
-    // Interaction logic for DeloitteValition.xaml
+    // Interaction logic for DeloittePDF.xaml
     public partial class DeloittePDFDesigner
     {
         public DeloittePDFDesigner()

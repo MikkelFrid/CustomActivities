@@ -23,7 +23,7 @@ namespace DeloittePDF
     [ToolboxBitmap(typeof(MergePDF), "MergePDF.png")]
     public sealed class MergePDF : CodeActivity
     {
-        public Open Option { get; set; }
+        public DisplayViewer Option { get; set; }
 
         //Input: Set the input string
         [Category("Input")]
