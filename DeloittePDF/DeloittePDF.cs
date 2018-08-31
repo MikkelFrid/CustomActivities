@@ -19,7 +19,7 @@ using System.IO;
 
 namespace DeloittePDF
 {
-    // Start class and name the acitivty RegexCollection
+    // Start class and name the acitivty MergePDF
     [ToolboxBitmap(typeof(MergePDF), "MergePDF.png")]
     public sealed class MergePDF : CodeActivity
     {
@@ -82,5 +82,57 @@ namespace DeloittePDF
             }
         }
     }
-    // End class and name the acitivty RegexCollection
+    // End class and name the acitivty MergePDF
+
+    // Start class and name the acitivty SplitPDF
+    [ToolboxBitmap(typeof(SplitPDF), "MergePDF.png")]
+    public sealed class SplitPDF : CodeActivity
+    {
+        //Input: Set the input string
+        [Category("Input")]
+        [Description("PDF File")]
+        [RequiredArgument]
+        public InArgument<string> PdfFile { get; set; }
+
+        [Category("Input")]
+        [Description("Output Directory")]
+        [RequiredArgument]
+        public InArgument<string> OutputDirectory { get; set; }
+
+        protected override void Execute(CodeActivityContext context)
+        {
+            // Get a fresh copy of the sample PDF file
+            /*string filename = PdfFile.Get(context);
+            File.Copy(Path.Combine("../../../../../PDFs/", filename),
+              Path.Combine(Directory.GetCurrentDirectory(), filename), true);
+
+            // Open the file
+            PdfDocument inputDocument = PdfReader.Open(filename, PdfDocumentOpenMode.Import);*/
+
+            var byteArray = File.ReadAllBytes(PdfFile.Get(context));
+            using (var pdfOut = new PdfDocument())
+            {
+                using (var msInput = new MemoryStream(byteArray))
+                {
+                    var inputDocument = PdfReader.Open(msInput, PdfDocumentOpenMode.Import);
+                    string name = Path.GetFileNameWithoutExtension(PdfFile.Get(context));
+                    for (int idx = 0; idx < inputDocument.PageCount; idx++)
+                    {
+                        // Create new document
+                        PdfDocument outputDocument = new PdfDocument();
+                        outputDocument.Version = inputDocument.Version;
+                        outputDocument.Info.Title =
+                          String.Format("Page {0} of {1}", idx + 1, inputDocument.Info.Title);
+                        outputDocument.Info.Creator = inputDocument.Info.Creator;
+
+                        // Add the page and save it
+                        outputDocument.AddPage(inputDocument.Pages[idx]);
+                        outputDocument.Save(OutputDirectory.Get(context) + "\\" + String.Format("{0} - Page {1}.pdf", name, idx + 1));
+                    }
+                }
+
+            }
+        }
+    }
+    // End class and name the acitivty SplitPDF
 }

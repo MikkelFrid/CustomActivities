@@ -28,9 +28,14 @@ namespace DeloittePDF.Design
 
         public static void RegisterMetadata(AttributeTableBuilder builder)
         {
+
             builder.AddCustomAttributes(typeof(MergePDF), new CategoryAttribute("Deloitte PDF"));
             builder.AddCustomAttributes(typeof(MergePDF), new DesignerAttribute(typeof(DeloittePDFDesigner)));
             builder.AddCustomAttributes(typeof(MergePDF), new DescriptionAttribute("Merges a directory of PDF files"));
+
+            builder.AddCustomAttributes(typeof(SplitPDF), new CategoryAttribute("Deloitte PDF"));
+            /*builder.AddCustomAttributes(typeof(SplitPDF), new DesignerAttribute(typeof(DeloittePDFDesigner)));*/
+            builder.AddCustomAttributes(typeof(SplitPDF), new DescriptionAttribute("Splits a PDF file into multiple files"));
         }
     }
 }

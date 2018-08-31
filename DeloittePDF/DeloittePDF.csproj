@@ -56,5 +56,8 @@
   <ItemGroup>
     <EmbeddedResource Include="MergePDF.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SplitPDF.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
