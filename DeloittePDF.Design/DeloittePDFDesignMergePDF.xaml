@@ -51,7 +51,6 @@
                         <RowDefinition />
                         <RowDefinition />
                         <RowDefinition />
-                        <RowDefinition />
                     </Grid.RowDefinitions>
 
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Margin="5" Text="File Directory" />
@@ -59,14 +58,11 @@
 
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="0" Margin="5" Text="Output Name" />
                     <sapv:ExpressionTextBox HintText="Enter the output name of the file" Expression="{Binding Path=ModelItem.OutputName, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="1" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" Width="300" Margin="0,5" MaxLines="1" />
-                    
+
                     <Rectangle Width="400" Height="1" Fill="LightGray" Grid.Row="2" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="15"/>
 
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="3" Grid.Column="0" Margin="5" Text="Output Full Path" />
-                    <sapv:ExpressionTextBox HintText="Return full path of the outputted file" Expression="{Binding Path=ModelItem.OutputFullPath, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="3" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" Width="300" Margin="0,5" MaxLines="1" />
-
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="4" Grid.Column="0" Margin="5" Text="Open PDF when merged" />
-                    <ComboBox ItemsSource="{Binding Source={StaticResource OpenValues}}" SelectedValue="{Binding Path=ModelItem.Option, Mode=TwoWay, Converter={StaticResource ModelToObjectValueConverter}}" VerticalAlignment="Center" Grid.Row="4" Grid.Column="1" Margin="0,5" IsDropDownOpen="False"/>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="3" Grid.Column="0" Margin="5" Text="Open PDF when merged" />
+                    <ComboBox ItemsSource="{Binding Source={StaticResource OpenValues}}" SelectedValue="{Binding Path=ModelItem.Option, Mode=TwoWay, Converter={StaticResource ModelToObjectValueConverter}}" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Margin="0,5" IsDropDownOpen="False"/>
 
                 </Grid>
             </DataTemplate>

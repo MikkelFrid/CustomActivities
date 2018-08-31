@@ -53,7 +53,7 @@
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Margin="5" Text="PDF File" />
                     <sapv:ExpressionTextBox HintText="Enter the directory to merge as a string" Expression="{Binding Path=ModelItem.PdfFile, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="0" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" Width="300" Margin="0,5" MaxLines="1" />
 
-                    <Rectangle Width="400" Height="1" Fill="LightGray" Grid.Row="1" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="15"/>
+                    <Rectangle Width="360" Height="1" Fill="LightGray" Grid.Row="1" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="15"/>
 
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="0" Margin="5" Text="Output Directory" />
                     <sapv:ExpressionTextBox HintText="Return full path of the outputted file" Expression="{Binding Path=ModelItem.OutputDirectory, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="2" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" Width="300" Margin="0,5" MaxLines="1" />
