@@ -1,0 +1,6 @@
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteLog.Properties\bin\Release\DeloitteLog.Properties.dll
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteLog.Properties\bin\Release\DeloitteLog.Properties.pdb
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteLog.Properties\obj\Release\DeloitteLog.Properties.csprojAssemblyReference.cache
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteLog.Properties\obj\Release\DeloitteLog.Properties.csproj.CoreCompileInputs.cache
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteLog.Properties\obj\Release\DeloitteLog.Properties.dll
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteLog.Properties\obj\Release\DeloitteLog.Properties.pdb

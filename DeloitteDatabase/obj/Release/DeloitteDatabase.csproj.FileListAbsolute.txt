@@ -1,0 +1,6 @@
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteDatabase\bin\Release\DeloitteDatabase.dll
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteDatabase\bin\Release\DeloitteDatabase.pdb
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteDatabase\obj\Release\DeloitteDatabase.csprojAssemblyReference.cache
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteDatabase\obj\Release\DeloitteDatabase.csproj.CoreCompileInputs.cache
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteDatabase\obj\Release\DeloitteDatabase.dll
+C:\Users\miknoergaard\source\repos\DeloitteValidation\DeloitteDatabase\obj\Release\DeloitteDatabase.pdb
